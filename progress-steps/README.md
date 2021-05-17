@@ -11,7 +11,8 @@ My logic - Add or remove class `active` to the next circle and the previous line
 
 MDN - [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-```forEach((element, index) => { ... } )
+```
+forEach((element, index) => { ... } )
 element - The current element being processed in the array.
 index - The index of element in the array
 ```
