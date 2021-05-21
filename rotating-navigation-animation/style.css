@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL */
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background: hsl(0, 0%, 20%);
+  overflow-x:hidden;
+}
+
+h1 {font-size: 2.5rem;}
+h2{font-size: 2rem;}
+
+h1,h2,p {  margin: 1em auto;}
+
+img {
+  display:block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style:none;
+  display:flex;
+  gap: 1em;
+}
+
+ul {
+  display:flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+/* WRAPPER */
+.wrapper {
+  background: hsl(0, 1%, 95%);
+  width: 100vw;
+  padding: 3em;
+  transform-origin: top left;
+  transition: transform 600ms;
+  height: 100%;
+}
+
+/* TOP NAV BUTTONS */
+.nav_btn {
+  position:fixed;
+  background: #ff7979;
+  height: 200px;
+  width: 200px;
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+  transition: transform 600ms;
+}
+
+.nav_open,
+.nav_close {
+  position:absolute;
+  cursor:pointer;
+  top: 60%;
+  left: 60%;
+  font-size: 2em;
+  color: white;
+}
+
+
+.nav_close { 
+  transform-origin: top left;
+  transform: rotate(90deg);
+  left: -30%;
+}
+
+/* BOTTOM NAV LINKS */
+nav {
+  position: fixed;
+  left : 0; 
+  bottom: 5em;
+  z-index: 50;
+}
+
+nav ul {padding: 1.5em;}
+
+nav ul li {
+  color: white;
+  transform: translateX(-500px);
+  transition: transform 600ms;
+}
+
+nav ul li:nth-child(2) {margin-left:1em;}
+nav ul li:nth-child(3) {margin-left: 2em;}
+
+/* ON ROTATE */
+
+nav.rotate ul li {
+  transform: translateX(0px);
+  transition: 900ms 350ms ease-out;
+}
+
+.wrapper.rotate .nav_btn .nav_close {
+  transform: rotate(0deg);
+  left: 60%;
+  top: 65%;
+  transform-origin: top left;
+  transition: transform 600ms;
+}
+
+.wrapper.rotate .nav_btn .nav_open {
+  transform-origin: top left;
+  transform: rotate(90deg);
+  left: -30%;
+  transition: transform 600ms;
+}
+
+.wrapper.rotate {
+  transform:rotate(-16deg);
+  transition: 600ms linear;
+}
+
+
+
