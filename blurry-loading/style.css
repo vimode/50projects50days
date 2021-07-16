@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, 
+.bg_img {
+  display: flex;
+  place-content: center;
+  place-items: center
+}
+
+.bg_img {
+  background: url(https://source.unsplash.com/collection/3678981/2100x900) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  height: 100%;
+  width: 100vw;
+  z-index: -10;
+  filter:blur(0px);
+}
+
+.loading_text {
+  font-size: 5rem;
+  color: hsl(0,0%,0%);
+  opacity: 0;
+}
