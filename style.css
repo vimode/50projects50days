@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  padding: 2em;
+  padding: 2em 3em;
   background: hsl(182, 83%,  9%);
   color: var(--clr-minion-yellow);
   font-weight: 600;
