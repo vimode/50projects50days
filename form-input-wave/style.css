@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+form,
+input,
+button {font-family: inherit;}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.outer_container {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  height: 100%;
+  background: steelblue;
+  color: white;
+}
+
+.login_form {
+  background: #2a4e6c;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 5px;
+  width: 350px; 
+}
+
+.login_form h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.login_form input {
+  display:block;
+  background:inherit;
+  border:none;
+  border-bottom: 2px solid white;
+  outline:none;
+  color:white;
+  padding: 1em 0;
+  margin-top: 1.5em;
+}
+
+.login_form input::placeholder {
+  color: white;
+  font-size:1rem;
+}
+
+.btn {
+  background: hsl(206, 49%, 76%);
+  border: none;
+  padding: 1em 0;
+  border-radius: 5px;
+  font-size: 1rem; 
+}
+
+.email_text,
+.password_text{
+  transform: translateY(-50px);
+  transition: 200ms linear;
+}
+
+label span {
+  display:inline-block;
+}
+
+.login_form input:focus+label{
+  transform: translateY(-50px);
+  color: hsl(206, 49%, 76%);
+  transition: 200ms linear;
+}
+
+.login_form input:focus+label span:nth-child(1) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+}
+
+.login_form input:focus+label span:nth-child(2) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 50ms;
+}
+
+.login_form input:focus+label span:nth-child(3) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 100ms;
+}
+
+.login_form input:focus+label span:nth-child(4) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 150ms;
+}
+
+.login_form input:focus+label span:nth-child(5) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 200ms;
+}
+
+.login_form input:focus+label span:nth-child(6) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 250ms;
+}
+
+.login_form input:focus+label span:nth-child(7) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 300ms;
+}
+
+.login_form input:focus+label span:nth-child(7) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 350ms;
+}
+
+.login_form input:focus+label span:nth-child(8) {
+  transform: translateY(-30px);
+  transition: 200ms linear;
+  transition-delay: 400ms;
+}
+
+
